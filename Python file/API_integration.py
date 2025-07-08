@@ -4,7 +4,6 @@ import random
 from datetime import datetime
 import time
 
-# 🌍 Simulated Exchange Location Mapping
 coin_geo_info = {
     'binance': ('China', 'Asia'),
     'coinbase': ('USA', 'North America'),
@@ -17,7 +16,6 @@ coin_geo_info = {
 }
 exchanges = list(coin_geo_info.keys())
 
-# 🔁 Retry Wrapper for Requests
 def safe_request(url, params, retries=3):
     for i in range(retries):
         try:
@@ -30,7 +28,6 @@ def safe_request(url, params, retries=3):
         time.sleep(5)
     return None
 
-# 🚀 Main Fetch Function
 def fetch_crypto_data(pages=40):
     all_data = []
     for page in range(1, pages + 1):
@@ -70,7 +67,6 @@ def fetch_crypto_data(pages=40):
                 'Continent': continent
             }
 
-            # 🐞 Inject missing values randomly
             if random.random() < 0.05:
                 row['Country'] = None
             if random.random() < 0.03:
@@ -78,12 +74,10 @@ def fetch_crypto_data(pages=40):
 
             all_data.append(row)
 
-        # ⏳ Delay between requests
         time.sleep(3)
 
     return pd.DataFrame(all_data)
 
-# 🧾 Run and Save
 if __name__ == "__main__":
     df_crypto = fetch_crypto_data()
     df_crypto.to_csv("crypto_data.csv", index=False)
