@@ -9,11 +9,23 @@ An end-to-end data analytics project that extracts real-time data from the **Coi
 ---
 ## 📁 Folder Structure
 crypto-market-dashboard/
-├── Python Scripts/ → Data extraction & cleaning
-├── Data/ → Raw + cleaned datasets
-├── Power BI/ → Dashboard & PDF/usage log
-├── dashboard_preview.png → Snapshot of dashboard
-├── README.md → This file
+│
+├── 📁 Python Scripts/
+│   ├── API_integration.py         ← real-time data extraction script
+│   └── EDA.py                     ← cleaning + feature engineering
+│
+├── 📁 Data/
+│   ├── crypto_data.csv            ← raw data from API
+│   └── cleaned_crypto_data.csv    ← final file for Power BI
+│
+├── 📁 Power BI/
+│   ├── CryptoDashboard.pbix       ← Power BI interactive report
+│   └── PowerBIPerformanceData.json← visual usage log
+│   └── DATA_ANALYTICS_PROJECT.pdf ← PDF snapshot of dashboard
+│
+├── README.md                      ← detailed project doc
+
+
 ---
 ## 🚀 Python Workflow
 ### `API_integration.py`
