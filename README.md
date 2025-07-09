@@ -26,10 +26,7 @@ An end-to-end data analytics project that extracts real-time data from the **Coi
 - ✅ Geo Map: Country-wise volume
 - ✅ Donut Chart: Distribution by Continent
 - ✅ Bar Charts: Price Category & Volume Tier
-- ✅ Matrix: Region vs. Volume Heatmap
 - ✅ Slicers: Exchange, Continent, Country, Tier, Date
-### 📸 Preview:
-![Crypto Market Dashboard](dashboard_preview.png)
 > 🧠 Designed with a futuristic theme using #0D1117 (background), cyan and purple accents.
 ---
 ## 📄 PDF Snapshot & Performance Report
